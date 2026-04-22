@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberpunk City Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+<body>
+    <main class="container">
+        <h1>Cyberpunk City Text-to-Image</h1>
+        <p class="subtitle">Generate neon-drenched futuristic cityscapes with Stable Diffusion.</p>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <form action="/generate" method="post" class="generator-form">
+            <label for="prompt">Prompt</label>
+            <textarea id="prompt" name="prompt" rows="4" required placeholder="A rainy cyberpunk megacity, neon holograms, cinematic lighting..."></textarea>
+
+            <label for="negative_prompt">Negative Prompt</label>
+            <input id="negative_prompt" name="negative_prompt" type="text" placeholder="low quality, blurry, distorted" />
+
+            <div class="grid">
+                <div>
+                    <label for="num_inference_steps">Inference Steps</label>
+                    <input id="num_inference_steps" name="num_inference_steps" type="number" min="10" max="100" value="30" />
+                </div>
+                <div>
+                    <label for="guidance_scale">Guidance Scale</label>
+                    <input id="guidance_scale" name="guidance_scale" type="number" min="1" max="20" step="0.5" value="7.5" />
+                </div>
+                <div>
+                    <label for="height">Height</label>
+                    <input id="height" name="height" type="number" min="256" max="1024" step="64" value="512" />
+                </div>
+                <div>
+                    <label for="width">Width</label>
+                    <input id="width" name="width" type="number" min="256" max="1024" step="64" value="512" />
+                </div>
+            </div>
+
+            <label for="seed">Seed (optional)</label>
+            <input id="seed" name="seed" type="number" placeholder="e.g., 42" />
+
+            <button type="submit">Generate Image</button>
+        </form>
+    </main>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

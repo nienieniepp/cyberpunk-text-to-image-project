@@ -1,0 +1,10 @@
+flask==3.0.3
+torch>=2.2.0
+diffusers==0.30.3
+transformers==4.44.2
+accelerate==0.34.2
+safetensors==0.4.4
+Pillow==10.4.0
+jupyter==1.1.1
+notebook==7.2.2
+python-dotenv==1.0.1
