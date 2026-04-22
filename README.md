@@ -151,7 +151,18 @@ A reusable version is also available at `docs/TEAM_CONTRIBUTIONS_TEMPLATE.md`.
 
 ---
 
-## 7) Notes
+
+## 8) Prompt Dataset for Experiments
+
+CSV files for repeatable prompt studies:
+- `data/cyberpunk_experiment_prompts.csv` (50 prompts + default settings)
+- `data/negative_prompt_library.csv` (reusable negative prompt presets)
+
+Use `negative_prompt_key` to map experiment rows to a library preset.
+
+---
+
+## 9) Notes
 
 - First generation can be slow due to model download/caching.
 - CPU inference works but may be significantly slower.

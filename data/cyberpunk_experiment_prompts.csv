@@ -1,0 +1,51 @@
+prompt_id,theme,prompt,negative_prompt_key,guidance_scale,num_inference_steps,seed
+CP001,cyberpunk_city,"A rainy cyberpunk megacity at midnight, neon kanji signs reflected on wet asphalt, cinematic wide-angle shot",combined_default,7.5,30,1001
+CP002,cyberpunk_city,"Street-level view of a cyberpunk alley packed with food stalls, holographic menus, dense steam and moody blue lighting",combined_default,7.5,30,1002
+CP003,cyberpunk_city,"Aerial panorama of a cyberpunk skyline with colossal holograms, flying traffic lanes, and thunderclouds",combined_default,7.5,30,1003
+CP004,cyberpunk_city,"Cyberpunk train station at dawn, chrome architecture, commuters in glowing coats, volumetric light beams",combined_default,7.5,30,1004
+CP005,cyberpunk_city,"Neon-lit cyberpunk market district with robotic vendors, reflective puddles, and crowded sidewalks",combined_default,7.5,30,1005
+CP006,cyberpunk_city,"A solitary detective under a transparent umbrella in a cyberpunk boulevard, pink and cyan bokeh lights",combined_default,7.5,30,1006
+CP007,cyberpunk_city,"Cyberpunk rooftop garden above a megacity, bioluminescent plants, distant drone traffic, sunset haze",combined_default,7.5,30,1007
+CP008,cyberpunk_city,"Underground cyberpunk nightclub entrance, glitch signage, smoke plumes, high-contrast portrait composition",combined_default,7.5,30,1008
+CP009,cyberpunk_city,"Hyper-detailed cyberpunk financial district, mirrored skyscrapers, giant animated advertisements, overcast rain",combined_default,7.5,30,1009
+CP010,cyberpunk_city,"Cyberpunk harbor with autonomous cargo ships, neon cranes, foggy atmosphere, cinematic realism",combined_default,7.5,30,1010
+CP011,cyberpunk_city,"Narrow cyberpunk backstreet with tangled cables, vending machines, wet cobblestones, dramatic shadows",combined_default,7.5,30,1011
+CP012,cyberpunk_city,"Cyberpunk hospital exterior, emergency drones landing, red-blue alarm lights, night rain",combined_default,7.5,30,1012
+CP013,cyberpunk_city,"Futuristic cyberpunk university campus, holographic lecture boards, students with AR glasses, dusk lighting",combined_default,7.5,30,1013
+CP014,cyberpunk_city,"Cyberpunk bridge over polluted river, neon graffiti, distant megatowers, noir color grading",combined_default,7.5,30,1014
+CP015,cyberpunk_city,"High-speed chase through cyberpunk streets, motion blur, glowing billboards, cinematic framing",combined_default,7.5,30,1015
+CP016,cyberpunk_city,"Cyberpunk taxi stand with autonomous cabs, holographic route maps, reflective metallic surfaces",combined_default,7.5,30,1016
+CP017,cyberpunk_city,"Cyberpunk Chinatown festival, lantern drones, neon dragons, dense crowd, vibrant palette",combined_default,7.5,30,1017
+CP018,cyberpunk_city,"A cyberpunk plaza with giant digital statue, rain-soaked tiles, atmospheric fog, ultra-detailed",combined_default,7.5,30,1018
+CP019,cyberpunk_city,"Cyberpunk subway tunnel, maintenance bots, flickering neon strips, gritty texture",combined_default,7.5,30,1019
+CP020,cyberpunk_city,"Cyberpunk apartment balcony overlooking endless city lights, synthwave sunset sky",combined_default,7.5,30,1020
+CP021,cyberpunk_city,"Cyberpunk alley ramen shop scene, steam, backlit rain, shallow depth of field",combined_default,7.5,30,1021
+CP022,cyberpunk_city,"Cyberpunk police checkpoint with armored drones, scanning beams, tense noir mood",combined_default,7.5,30,1022
+CP023,cyberpunk_city,"Cyberpunk city during blackout, emergency neon backups, distant lightning, dramatic contrast",combined_default,7.5,30,1023
+CP024,cyberpunk_city,"Futuristic cyberpunk temple between skyscrapers, holographic incense, reflective stone floor",combined_default,7.5,30,1024
+CP025,cyberpunk_city,"Cyberpunk monorail passing through neon canyon of buildings, long exposure style",combined_default,7.5,30,1025
+CP026,cyberpunk_city,"Cyberpunk street fashion photoshoot in an alley, chromatic lighting, editorial composition",combined_default,7.5,30,1026
+CP027,cyberpunk_city,"Cyberpunk rooftop chase scene, wet metal, electric sparks, dynamic perspective",combined_default,7.5,30,1027
+CP028,cyberpunk_city,"Cyberpunk old-town district fused with advanced tech, retro signs and holograms together",combined_default,7.5,30,1028
+CP029,cyberpunk_city,"Cyberpunk city square in heavy acid rain, umbrellas with LED edges, moody cinematic look",combined_default,7.5,30,1029
+CP030,cyberpunk_city,"Cyberpunk emergency evacuation route with guiding holograms, dystopian atmosphere",combined_default,7.5,30,1030
+CP031,cyberpunk_city,"Cyberpunk repair workshop packed with android parts, warm neon interior, detailed clutter",combined_default,7.5,30,1031
+CP032,cyberpunk_city,"Cyberpunk data center tower at night, glowing server cores visible through glass facade",combined_default,7.5,30,1032
+CP033,cyberpunk_city,"Cyberpunk overpass with endless traffic streams, neon reflections, atmospheric perspective",combined_default,7.5,30,1033
+CP034,cyberpunk_city,"Cyberpunk slum district with improvised tech, colorful cables, gritty realism",combined_default,7.5,30,1034
+CP035,cyberpunk_city,"Cyberpunk luxury district penthouse exterior, sleek black glass, violet neon rim lighting",combined_default,7.5,30,1035
+CP036,cyberpunk_city,"Cyberpunk street musician with holographic instruments, rain droplets frozen in light",combined_default,7.5,30,1036
+CP037,cyberpunk_city,"Cyberpunk news broadcast square with giant screens, crowd silhouettes, dramatic composition",combined_default,7.5,30,1037
+CP038,cyberpunk_city,"Cyberpunk biotech lab exterior, transparent walls, floating UI elements, cool blue tones",combined_default,7.5,30,1038
+CP039,cyberpunk_city,"Cyberpunk moonlit skyline with intermittent neon flicker, atmospheric haze, painterly detail",combined_default,7.5,30,1039
+CP040,cyberpunk_city,"Cyberpunk transit hub interior, polished chrome, directional holograms, cinematic symmetry",combined_default,7.5,30,1040
+CP041,cyberpunk_city,"Cyberpunk protest march under neon banners, drones overhead, cinematic documentary style",combined_default,7.5,30,1041
+CP042,cyberpunk_city,"Cyberpunk arcade street at night, retro machines spilling light onto wet pavement",combined_default,7.5,30,1042
+CP043,cyberpunk_city,"Cyberpunk cemetery of obsolete robots, neon fog, melancholic dystopian mood",combined_default,7.5,30,1043
+CP044,cyberpunk_city,"Cyberpunk canal district with floating market boats, holographic reflections, twilight scene",combined_default,7.5,30,1044
+CP045,cyberpunk_city,"Cyberpunk storm shelter entrance, emergency signage, puddles, gritty urban realism",combined_default,7.5,30,1045
+CP046,cyberpunk_city,"Cyberpunk fashion district with animated storefronts, glowing mannequins, glossy textures",combined_default,7.5,30,1046
+CP047,cyberpunk_city,"Cyberpunk industrial zone with plasma furnaces, workers in exosuits, dark orange glow",combined_default,7.5,30,1047
+CP048,cyberpunk_city,"Cyberpunk city hall plaza, monumental architecture, surveillance drones, overcast light",combined_default,7.5,30,1048
+CP049,cyberpunk_city,"Cyberpunk observatory tower above smog layer, holographic stars, serene neon night",combined_default,7.5,30,1049
+CP050,cyberpunk_city,"Cyberpunk city at sunrise after rain, clean reflections, pastel neon gradients, hopeful mood",combined_default,7.5,30,1050
