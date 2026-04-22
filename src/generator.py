@@ -1,3 +1,5 @@
+"""Model inference utilities for Stable Diffusion image generation."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -13,11 +15,14 @@ from .utils import build_output_filename, ensure_output_dir
 try:
     from diffusers import StableDiffusionPipeline
 except Exception:  # pragma: no cover
+    # Fallback mode keeps the demo app importable in restricted environments.
     StableDiffusionPipeline = None
 
 
 @dataclass
 class GenerationParams:
+    """Container for user-selected generation settings."""
+
     prompt: str
     negative_prompt: str = ""
     num_inference_steps: int = Config.DEFAULT_STEPS
@@ -28,6 +33,8 @@ class GenerationParams:
 
 
 class CyberpunkGenerator:
+    """Lazy-loading generator wrapper around diffusers pipeline."""
+
     def __init__(self, model_id: str = Config.MODEL_ID, output_dir: str = Config.OUTPUT_DIR):
         self.model_id = model_id
         self.output_dir = ensure_output_dir(output_dir)
@@ -35,6 +42,7 @@ class CyberpunkGenerator:
         self.pipeline = None
 
     def _load_pipeline(self):
+        """Load model once per process for faster subsequent generations."""
         if self.pipeline is not None:
             return
 
@@ -44,21 +52,18 @@ class CyberpunkGenerator:
 
         dtype = torch.float16 if self.device == "cuda" else torch.float32
         self.pipeline = StableDiffusionPipeline.from_pretrained(self.model_id, torch_dtype=dtype)
-
-        if self.device == "cuda":
-            self.pipeline = self.pipeline.to("cuda")
-        else:
-            self.pipeline = self.pipeline.to("cpu")
+        self.pipeline = self.pipeline.to(self.device)
 
     def generate(self, params: GenerationParams) -> Path:
+        """Generate an image from params and return the saved file path."""
         self._load_pipeline()
 
+        # Manual seed enables reproducible runs for experiments.
         generator = None
         if params.seed is not None:
             generator = torch.Generator(device=self.device).manual_seed(params.seed)
 
-        filename = build_output_filename("cyberpunk_city")
-        output_path = self.output_dir / filename
+        output_path = self.output_dir / build_output_filename("cyberpunk_city")
 
         if self.pipeline == "mock":
             image = self._mock_image(params.prompt, params.width, params.height)
@@ -79,6 +84,7 @@ class CyberpunkGenerator:
 
     @staticmethod
     def _mock_image(prompt: str, width: int, height: int) -> Image.Image:
+        """Simple placeholder image used when diffusion dependencies are unavailable."""
         image = Image.new("RGB", (width, height), color=(22, 24, 45))
         draw = ImageDraw.Draw(image)
         draw.rectangle((0, height - 70, width, height), fill=(117, 0, 178))
