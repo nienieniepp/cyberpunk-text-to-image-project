@@ -1,0 +1,9 @@
+negative_prompt_key,negative_prompt_text,notes
+quality_guard,"lowres, blurry, pixelated, jpeg artifacts, noisy, worst quality, low quality",Reusable negative prompt preset for experiments
+anatomy_guard,"deformed, disfigured, bad anatomy, extra limbs, extra fingers, mutated hands",Reusable negative prompt preset for experiments
+composition_guard,"cropped, out of frame, duplicate subject, poorly drawn perspective",Reusable negative prompt preset for experiments
+text_logo_guard,"text, logo, watermark, signature, subtitle, captions",Reusable negative prompt preset for experiments
+style_guard,"cartoon, anime, oversaturated, flat lighting, washed out colors",Reusable negative prompt preset for experiments
+city_artifacts_guard,"floating buildings, warped architecture, broken roads, impossible geometry",Reusable negative prompt preset for experiments
+nsfw_guard,"nudity, explicit, suggestive, fetish",Reusable negative prompt preset for experiments
+combined_default,"lowres, blurry, jpeg artifacts, bad anatomy, extra limbs, text, logo, watermark, distorted perspective",Reusable negative prompt preset for experiments
