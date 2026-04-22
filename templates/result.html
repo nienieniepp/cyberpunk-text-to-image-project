@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generated Cyberpunk Image</title>
+    <title>Generated Image</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
 </head>
 <body>
     <main class="container">
-        <h1>Generation Result</h1>
+        <h1>Generated Cyberpunk Image</h1>
         <p><strong>Prompt:</strong> {{ prompt }}</p>
         <p class="params">
-            Steps: {{ params.num_inference_steps }} |
-            Guidance: {{ params.guidance_scale }} |
-            Size: {{ params.width }}x{{ params.height }} |
+            Negative Prompt: {{ params.negative_prompt if params.negative_prompt else 'None' }}<br />
+            Inference Steps: {{ params.num_inference_steps }}<br />
+            Guidance Scale: {{ params.guidance_scale }}<br />
             Seed: {{ params.seed if params.seed is not none else 'random' }}
         </p>
 
@@ -21,7 +21,7 @@
             <img src="{{ image_url }}" alt="Generated cyberpunk city image" />
         </div>
 
-        <a class="back-link" href="/">← Generate another image</a>
+        <a class="back-link" href="{{ url_for('index') }}">← Generate another image</a>
     </main>
 </body>
 </html>

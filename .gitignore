@@ -40,3 +40,7 @@ outputs/*.png
 outputs/*.jpg
 outputs/*.jpeg
 outputs/*.webp
+static/outputs/*.png
+static/outputs/*.jpg
+static/outputs/*.jpeg
+static/outputs/*.webp
